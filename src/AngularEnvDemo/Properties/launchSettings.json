@@ -1,0 +1,32 @@
+{
+  "profiles": {
+    "AngularEnvDemo": {
+      "commandName": "Project",
+      "commandLineArgs": "--configuetion=prod --prod --ENVIRONMENT=prod --ENV_DEMO_KEY=woot --ENV_DEMO_NAME=what --ENV_DEMO_URL=https://env_demo_arg.com",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ENVIRONMENT": "prod",
+        "ASPNETCORE_ENVIRONMENT": "prod",
+        "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.SpaProxy"
+      },
+      "applicationUrl": "https://localhost:7119;http://localhost:5119"
+    },
+    "IIS Express": {
+      "commandName": "IISExpress",
+      "launchBrowser": true,
+      "environmentVariables": {
+        "ENVIRONMENT": "prod",
+        "ASPNETCORE_ENVIRONMENT": "prod",
+        "ASPNETCORE_HOSTINGSTARTUPASSEMBLIES": "Microsoft.AspNetCore.SpaProxy"
+      }
+    }
+  },
+  "iisSettings": {
+    "windowsAuthentication": false,
+    "anonymousAuthentication": true,
+    "iisExpress": {
+      "applicationUrl": "http://localhost:26633",
+      "sslPort": 44339
+    }
+  }
+}
